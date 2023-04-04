@@ -6,11 +6,25 @@ public class Colas {
         cola1.agregarElementos(100);
         cola1.agregarElementos(1000);
 
+        System.out.println("ELEMENTOS DE LA COLA 1:");
+
+        int indice = 1;
+        int indice1 = 1;
+        Nodo aux = cola1.frente;
+        while(aux != null){
+            System.out.println("Elemento - "+indice+" - "+aux.dato);
+            ++indice;
+            aux = aux.siguiente;
+        }
+
+        System.out.printf("\n");
 
         Cola cola2 = cola1.crearCola();
 
+        System.out.println("ELEMENTOS DE LA COLA 2:");
         while(!cola2.colaVacia()){
-            System.out.println(""+cola2.frente.dato);
+            System.out.println("Elemento - "+indice1+" - "+cola2.frente.dato);
+            ++indice1;
             cola2.frente = cola2.frente.siguiente;
         }
     }
