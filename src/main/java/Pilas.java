@@ -21,10 +21,16 @@ public class Pilas {
     }
 
     public static void moverEnteros(Stack<Integer> pila1, Stack<Integer> pila2) {
+        Stack<Integer> aux = new Stack<>();
         while (!pila1.empty()) {
             int entero = pila1.pop();
-            pila2.push(entero);
+            aux.push(entero);
+        }
+
+            while(!aux.empty()){
+                int entero = aux.pop();
+                pila2.push(entero);
+            }
         }
     }
-}
 
