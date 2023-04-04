@@ -4,7 +4,6 @@ public class Recepcionpedidos {
         String Roberto = "Roberto", Julio="Julio", Amanda="Amanda", Alexa="Alexa",
                 AT="Advocado Technologies", Tx="Telmex", CIA="CIA";
 
-        Recepcionpedidos datos = new Recepcionpedidos(cliente, cantidad);
         Recepcionpedidos.Colapedidos pedidos = new Recepcionpedidos.Colapedidos();
 
         pedidos.insercionPedidos(Roberto, 1);
@@ -34,7 +33,7 @@ public class Recepcionpedidos {
     }
 
     public static class Colapedidos{
-        class Nodo {
+        public static class Nodo {
             String cliente;
             int cantidad;
             Nodo siguiente;
