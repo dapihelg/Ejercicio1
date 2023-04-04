@@ -22,7 +22,8 @@ public class Colas {
     }
 
     public static class Cola {
-        Nodo frente, fondo;
+        Nodo frente;
+        Nodo fondo;
 
     public Cola() {
         this.frente = null;
