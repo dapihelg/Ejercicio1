@@ -20,7 +20,7 @@ public class Datospares {
 
     public static class Nodo{
     public int numero;
-    public Nodo siguiente;
+    Nodo siguiente;
 
     public Nodo(int numero) {
         this.numero = numero;
@@ -29,7 +29,7 @@ public class Datospares {
     }
 
     public static class Listaenlazada{
-    public Nodo inicio;
+    Nodo inicio;
 
     public Listaenlazada() {
         this.inicio = null;
