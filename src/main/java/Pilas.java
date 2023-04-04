@@ -26,7 +26,6 @@ public class Pilas {
             int entero = pila1.pop();
             aux.push(entero);
         }
-
             while(!aux.empty()){
                 int entero = aux.pop();
                 pila2.push(entero);
